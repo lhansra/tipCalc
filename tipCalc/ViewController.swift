@@ -24,6 +24,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var billField: UITextField!
     
+    @IBOutlet weak var label2: UILabel!
+    
+    @IBOutlet weak var label3: UILabel!
+    
+    @IBOutlet weak var label4: UILabel!
     
     @IBAction func onTap(_ sender: Any) {
         print("Hello")
@@ -41,6 +46,9 @@ class ViewController: UIViewController {
         //Update tip and total labels
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
+        label2.text = String(format:"$%.2f", total/2)
+        label3.text = String(format:"$%.2f", total/3)
+        label4.text = String(format:"$%.2f", total/4)
     }
 }
 
